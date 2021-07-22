@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: gray;
+}
+
+.heading {
+  text-align: center;
+}
+
+.DownloadFiles {
+  display: none;
+  border-radius: 25px;
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: auto;
+  width: 50%;
+  padding: 0px;
+  height: auto;
+  font-family: "Open Sans", sans-serif;
+}
+
+.uploaderfile {
+  background-color: white;
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  height: auto;
+  font-family: "Open Sans", sans-serif;
+}
+.inner-uploaderfile {
+  background-clip: border-box;
+  border-radius: 0.25rem;
+  padding: 35px 20px 100px 20px;
+  display: inline-block !important;
+  text-align: left;
+  transition: 150ms;
+  margin-bottom: 0;
+  width: 100%;
+  height: auto;
+}
+
+.Zipfile_dropzone {
+  text-align: center;
+  color: white;
+  position: relative;
+  top: 10px;
+}
+
+.button {
+  outline: none;
+  display: inline-block;
+  background: gray;
+  padding: 13px 22px;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.19;
+  letter-spacing: 0.32px;
+  cursor: pointer;
+  border: unset;
+  color: white !important;
+}
+.zip-download-button {
+  display: none;
+}
+#extracted {
+  display: none;
+}
+
+.download-all-zip {
+  font-size: 20px;
+  line-height: 1.19;
+  background-color: transparent;
+  margin: 0 10px;
+  padding-top: 0px 0px 0px 0px;
+  border: none;
+  margin-right: 20px;
+}
+.download-all-zip:focus {
+  outline: none;
+}
+.jstree-anchor {
+  font-size: 14px;
+}
+
+.jstree-anchor:hover {
+  color: #003adc;
+  text-decoration: underline;
+}
+
+.jstree-default .jstree-themeicon {
+  background-image: url("https://img.icons8.com/material-rounded/24/fa314a/folder-invoices.png");
+  background-size: 16px 16px;
+  background-position: 4px 3px;
+}
+
+.file-upload {
+  display: none;
+}
+
+#zipname {
+  position: relative;
+  left: 35px;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.21;
+  color: #000;
+}
+
+#header {
+  overflow: hidden;
+  background-color: #fff;
+}
+
+@media only screen and (min-width: 600px) {
+  .download-all-zip {
+    margin: 10px 10px;
+  }
+}
+@media only screen and (min-width: 350px) {
+  .inner-uploaderfile {
+    border: none;
+  }
+  .button {
+    margin-left: -20px;
+  }
+}
+@media only screen and (max-width: 1400px) {
+  .button {
+    margin-left: -20px;
+  }
+}
+@media only screen and (max-width: 356px) {
+  .inner-uploaderfile {
+    border: none;
+  }
+  .download-all-zip {
+    margin: 10px 10px;
+  }
+  #extracted {
+    margin: -30px;
+    margin-bottom: auto;
+  }
+  .uploaderfile {
+    width: 88%;
+    padding: 0px 0px 0px 0px;
+  }
+}

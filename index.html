@@ -1,0 +1,76 @@
+<html>
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <script type="text/javascript" src="./zip.js"></script>
+    <script type="text/javascript" src="./zip-fs.js"></script>
+    <script type="text/javascript" src="./FileSaver.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/themes/default/style.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/jstree.min.js"></script>
+    <!--css styling of site-->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h2 style="text-align: center; color: white">Extract File</h2>
+    <div id="uploaderfile" class="uploaderfile">
+      <div class="inner-uploaderfile" id="dropContainer">
+        <div class="Zipfile_dropzone">
+          <div id="upload-icon-section">
+            <br />
+            <div>
+              <input
+                type="file"
+                id="file"
+                class="file-upload"
+                onchange="ZipfileHandler()"
+              />
+              <button id="zip_file" type="file" class="button">
+                Upload Zip
+              </button>
+            </div>
+          </div>
+
+          <h5
+            class="text-left Zip_extracting_Done mb-3"
+            style="font-weight: 600"
+          ></h5>
+          <h5 id="Main_input_file_name" class="text-left"></h5>
+          <div
+            id="extracted"
+            class="zip-container"
+            style="text-align: left; color: #000"
+          ></div>
+
+          <div class="zip-download-button">
+            <button
+              onclick="RefreshZipHandler()"
+              id="download-all-zip"
+              class="download-all-zip"
+            >
+              <i class="extractother"></i>
+              Extract zip
+            </button>
+
+            <button
+              onclick="downloadZips()"
+              id="download-all-zip"
+              class="download-all-zip"
+            >
+              Download all files
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--js file for extract zip file-->
+    <script src="zipfile.js"></script>
+  </body>
+</html>
